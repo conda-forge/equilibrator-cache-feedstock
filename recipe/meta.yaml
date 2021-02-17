@@ -1,5 +1,5 @@
 {% set name = "equilibrator-cache" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/equilibrator-cache-{{ version }}.tar.gz
-  sha256: 1e694a3a57cf743237bc91f97a6cad37bb4cad0cf96931dbf6ef659e68a8531f
+  sha256: dfefba339105ff4e0ea7e6884f6dd850b8b837edc6e243dcead7294c7f8a26f7
   patches:
     - 0001-Setuptools-depend-on-python-Levenshtein-instead-of-p.patch
 
