@@ -9,8 +9,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/equilibrator-cache-{{ version }}.tar.gz
   sha256: 7e692d33937237eb5921824e85e546b2024bb3f6ec01ddd92ab8c46dcc88ef5e
-  patches:
-    - 0001-Setuptools-depend-on-python-Levenshtein-instead-of-p.patch
 
 build:
   number: 0
