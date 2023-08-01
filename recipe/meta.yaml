@@ -1,5 +1,5 @@
 {% set name = "equilibrator-cache" %}
-{% set version = "0.4.3" %}
+{% set version = "0.5.1" %}
 
 
 package:
@@ -8,9 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/equilibrator-cache-{{ version }}.tar.gz
-  sha256: e3f9425285ce4052f98fb0a26eaa8027137eb73897a2e0dec24255a26bb19d8c
-  patches:
-    - 0001-Setuptools-depend-on-python-Levenshtein-instead-of-p.patch
+  sha256: e31a6bf7be3954fab41ebb766501055bc9286ec30228849654c957a22681699f
 
 build:
   number: 0
@@ -20,22 +18,20 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
   run:
-    - appdirs ~=1.4
-    - httpx ~=0.16
-    - importlib_resources
-    - numpy ~=1.19
+    - python >=3.9
+    - sqlalchemy >=1.3,<1.4
+    - numpy >=1.13
+    - scipy >=1.11
     - pandas ~=1.0
+    - Levenshtein ~=0.21
+    - pint ~=0.22
     - periodictable ~=1.5
-    - pint ~=0.14
-    - python >=3.6
-    - python-levenshtein
-    - pyzenodo3 ~=1.0
-    - scipy ~=1.5
-    - sqlalchemy >=1.3, <1.4
-    - tenacity ~=6.2
-    - tqdm ~=4.50
+    - httpx ~=0.24
+    - tenacity ~=6.3
+    - tqdm ~=4.0
+    - appdirs ~=1.4
 
 test:
   imports:
