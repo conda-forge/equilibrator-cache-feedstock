@@ -145,7 +145,5 @@ Feedstock Maintainers
 
 * [@Midnighter](https://github.com/Midnighter/)
 * [@eladnoor](https://github.com/eladnoor/)
-
-
-<!-- dummy commit to enable rerendering -->
+* [@rgiessmann](https://github.com/rgiessmann/)
 
