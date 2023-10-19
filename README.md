@@ -145,4 +145,5 @@ Feedstock Maintainers
 
 * [@Midnighter](https://github.com/Midnighter/)
 * [@eladnoor](https://github.com/eladnoor/)
+* [@rgiessmann](https://github.com/rgiessmann/)
 
