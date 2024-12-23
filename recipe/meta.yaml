@@ -7,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 34e040c2fe27c6ad4ba815f50b1ce1d01c119025e60a1f56dc84f8d81b4fe7c1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=62.6
     - setuptools-scm
     - setuptools-git-versioning >=2.0,<3
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - sqlalchemy ~=2.0
     - numpy >=2.0
     - scipy >=1.12
@@ -41,6 +41,7 @@ test:
     - equilibrator_cache.models
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
