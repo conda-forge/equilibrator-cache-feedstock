@@ -1,5 +1,5 @@
 {% set name = "equilibrator-cache" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 34e040c2fe27c6ad4ba815f50b1ce1d01c119025e60a1f56dc84f8d81b4fe7c1
+  sha256: 0f08e8417e91381cf6a9cffac0ea549780b7d2036807e5a8213d0a9884e2518a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -28,7 +28,7 @@ requirements:
     - numpy >=2.0
     - scipy >=1.12
     - pandas >=2.0
-    - pyarrow ~=17.0
+    - pyarrow ~=21.0
     - Levenshtein ~=0.25
     - pint ~=0.24
     - tqdm ~=4.0
