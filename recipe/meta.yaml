@@ -1,5 +1,5 @@
 {% set name = "equilibrator-cache" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0f08e8417e91381cf6a9cffac0ea549780b7d2036807e5a8213d0a9884e2518a
+  sha256: aefa02172073dcc889bf13a5af0898e31c23f4e71b312c544f0c2800278cfbc6
 
 build:
   number: 0
