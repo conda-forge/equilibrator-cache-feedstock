@@ -1,5 +1,5 @@
 {% set name = "equilibrator-cache" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set python_min = "3.11" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: aefa02172073dcc889bf13a5af0898e31c23f4e71b312c544f0c2800278cfbc6
+  sha256: 6423e6b35841566a91b6733a560851a9f71151d6268f3fc96e777fc9a9466faa
 
 build:
   number: 0
